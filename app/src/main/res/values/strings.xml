@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Tugas PPB</string>
+    <string name="assign1">Tugas 1</string>
+    <string name="assign2">Tugas 2</string>
+    <string name="assign3">Tugas 3</string>
+    <string name="assign4">Tugas 4</string>
+    <string name="assign5">Tugas 5</string>
+    <string name="assign6">Tugas 6</string>
+
+    <string name="assign1_name">Hello User</string>
+    <string name="assign2_name">Hitung Luas</string>
+    <string name="assign3_name">Kalkulator</string>
+    <string name="assign4_name">Latihan Database</string>
+    <string name="assign5_name">Latihan Modality</string>
+    <string name="assign6_name">Latihan Database dan Listview</string>
+
+    <string name="hint_text_edit">Ketik Disini</string>
+
+    <!--    Tugas 3 -->
+    <string name="result">Hasil</string>
+    <string name="error">Error!</string>
+    <string name="zero">0</string>
+    <string name="add">+</string>
+    <string name="subtract">-</string>
+    <string name="multiply">×</string>
+    <string name="divide">÷</string>
+    <!--    Tugas 3 -->
+
+
+    <!--    Tugas 4 -->
+    <string name="nrp">NRP</string>
+    <string name="name">Nama</string>
+    <string name="save">Simpan</string>
+    <string name="get_data">Ambil Data</string>
+    <string name="delete">Hapus Data</string>
+    <string name="update">Perbarui Data</string>
+    <!--    Tugas 4 -->
+
+    <!--    Tugas 5 -->
+    <string name="show_input_dialog">Show Input Dialog</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="enter_text_here">Enter text here..</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Batal</string>
+    <!--    Tugas 5 -->
+
+    <!--    Tugas 6 -->
+    <string name="list_empty">Practice ListView and Database</string>
+    <string name="add_new_data">Tambah data baru</string>
+    <string name="search">Pencarian...</string>
+    <string name="empty">Daftar Kosong...</string>
+    <string name="contact">Kontak</string>
+    <string name="edit">Edit</string>
+    <!--    Tugas 5 -->
+</resources>

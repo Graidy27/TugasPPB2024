@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tugas3MainActivity">
+
+    <TextView
+        android:id="@+id/tugas3TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/assign3"
+        android:textSize="@dimen/header1_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <TextView
+        android:id="@+id/tugas3Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/assign3_name"
+        android:textSize="@dimen/header2_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+
+        android:layout_margin="8dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tugas3Name">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutNumberInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/firstNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+
+                android:hint="@string/zero"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/secondNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+
+                android:hint="@string/zero"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/labelResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/linearLayoutNumberInput"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+
+            android:text="@string/result"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/labelResult"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+
+            android:text="@string/zero"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/textViewResult"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="32dp"
+
+            android:columnCount="2">
+
+            <Button
+                android:id="@+id/buttonAddition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+
+                android:text="@string/add"
+                android:textSize="32sp"
+                android:textStyle="bold">
+            </Button>
+
+            <Button
+                android:id="@+id/buttonSubtraction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+
+                android:text="@string/subtract"
+                android:textSize="32sp"
+                android:textStyle="bold">
+            </Button>
+
+            <Button
+                android:id="@+id/buttonMultiplication"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+
+                android:text="@string/multiply"
+                android:textSize="32sp"
+                android:textStyle="bold">
+            </Button>
+
+            <Button
+                android:id="@+id/buttonDivision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+
+                android:text="@string/divide"
+                android:textSize="32sp"
+                android:textStyle="bold">
+            </Button>
+        </GridLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
