@@ -80,6 +80,26 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button buttonAssign7 = (Button) findViewById(R.id.b_assign_7);
+        buttonAssign7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Start the new activity
+                Intent intent = new Intent(MainActivity.this, Tugas7MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button buttonAssign8 = (Button) findViewById(R.id.b_assign_8);
+        buttonAssign8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Start the new activity
+                Intent intent = new Intent(MainActivity.this, Tugas8MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);

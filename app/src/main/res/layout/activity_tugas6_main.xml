@@ -7,10 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".Tugas6MainActivity">
     <TextView
-        android:id="@+id/tugas4TextView1"
+        android:id="@+id/tugas6TextView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/assign5"
+        android:text="@string/assign6"
         android:textSize="@dimen/header1_size"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.045" />
 
     <TextView
-        android:id="@+id/tugas4Name"
+        android:id="@+id/tugas6Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/assign6_name"
@@ -30,6 +30,69 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tugas4TextView1"
+        app:layout_constraintTop_toBottomOf="@+id/tugas6TextView1"
         app:layout_constraintVertical_bias="0.079" />
+    <ImageButton
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@+id/tugas6Name"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:layout_margin="8dp"
+
+        android:background="@drawable/rounded_button_background"
+        android:backgroundTint="@color/purple"
+        android:padding="16dp"
+        android:src="@drawable/person_add_32" />
+
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="8dp"
+
+        android:drawableStart="@drawable/search_glass_32"
+        android:hint="@string/search"
+        android:inputType="text"
+        android:maxLines="1"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonAdd"
+        app:layout_constraintTop_toTopOf="@+id/buttonAdd" />
+
+    <TextView
+        android:id="@+id/textViewEmptyContactList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAdd"
+
+        android:text="@string/empty"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:drawableTopCompat="@drawable/snowboarding_64">
+    </TextView>
+
+    <ListView
+        android:id="@+id/listViewContactList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAdd"
+
+        android:visibility="gone"
+
+        android:padding="16dp"
+        tools:listitem="@layout/tugas6_item_contact">
+    </ListView>
 </androidx.constraintlayout.widget.ConstraintLayout>
